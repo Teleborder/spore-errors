@@ -1,6 +1,6 @@
 {
   "name": "spore-errors",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Shared Error codes for Spore clients",
   "main": "index.js",
   "scripts": {

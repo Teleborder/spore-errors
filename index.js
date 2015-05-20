@@ -10,10 +10,6 @@ exports.noValue = errType('SPORE_CELL_UNDEFINED', function (cellName) {
   return "No value has been specified for " + cellName;
 });
 
-exports.noCache = errType('SPORE_CELL_NOT_CACHED', function (cellName) {
-  return "No value in the Spore cache for " + cellName;
-});
-
 exports.onlyStrings = errType('SPORE_CELL_ONLY_STRINGS', function (cellName) {
   return "Only strings are allowed as cell values (cell: " + cellName + ")";
 });
@@ -24,10 +20,6 @@ exports.badPath = errType('SPORE_CELL_PATH_INVALID', function (path, sep) {
 
 exports.noEnvs = errType('SPORE_APP_NO_ENVIRONMENTS', function (appName) {
   return "The Spore app " + appName + " does not have any environments";
-});
-
-exports.noConnection = errType('SPORE_API_NO_CONNECTION', function (path) {
-  return "The request to " + path + " failed due to a lack of a network connection";
 });
 
 function errType(code, msgFn) {
